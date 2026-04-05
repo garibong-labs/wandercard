@@ -104,6 +104,9 @@ final class TravelCard {
     var photoLocalIdentifier: String  // PHAsset.localIdentifier
     var textContent: String?          // Shared text or manual input
     var sourceURL: URL?               // If shared via Share Extension
+    var locationName: String?         // EXIF reverse geocoded (e.g. "교토, 일본")
+    var locationLatitude: Double?     // EXIF GPS latitude
+    var locationLongitude: Double?    // EXIF GPS longitude
     var templateType: CardTemplateType // .light, .dark, .minimal
     var renderedImageLocalPath: String?
     var createdAt: Date = Date()
@@ -196,7 +199,11 @@ final class CardRenderer {
 
 **명도 대비 (WCAG AA):**
 - 텍스트 컬러: 라이트=#1A1A1A, 다크=#F5F0EB, 미니멀=#1A1A1A
-- 반투명 오버레이 alpha ≥ 0.6 필수
+- 반투명 오버레이 alpha 값:
+  - 라이트: 텍스트 아래 흰색 반투명 박스 `rgba(255,255,255,0.85)` — 배경과 텍스트 대비 ≥ 4.5:1
+  - 다크: 사진 위에 `rgba(0,0,0,0.55)` 오버레이 + 흰색 텍스트 `#F5F0EB` — 대비 ≥ 7:1
+  - 미니멀: 여백 영역에 직접 배치 (오버레이 불필요) — 대비 ≥ 15:1
+- 폰트 크기 ≥ 16pt (본문), ≥ 24pt (제목) — Dynamic Type 대응
 
 ### 3.3 TripGroupingService (자동 그룹핑)
 
@@ -378,28 +385,57 @@ UIApplication.shared.open(URL(string: "wandercard://share?text=\(encoded)")!)
 
 **URL Scheme:** `wandercard://share?text=...&url=...`
 
+**데이터 전달 상세 (App Groups 기반 — URL Scheme 보조):**
+
+PoC에서는 **URL Scheme only**로 단순화 (App Groups는 Phase 2):
+1. Share Extention에서 받은 데이터 (text/URL/image)를 `UserDefaults(suiteName: "group.dev.garibong.wandercard")`에 임시 저장
+   - 키: `shared_pending_text`, `shared_pending_url`, `shared_pending_image_path`
+   - `UserDefaults`는 main app과 extension 양쪽에서 접근 가능
+2. Share Extension에서 `UIApplication.shared.open(URL(string: "wandercard://share")!)` — URL 파라미터 없이 트리거만
+3. Main app `onOpenURL`에서 `UserDefaults` 읽어서 `CreateCardViewModel`에 주입
+4. 데이터 사용 후 즉시 `UserDefaults`에서 삭제
+
+**이미지 전달 특이사항:**
+- Share Extension은 main app의 sandbox에 직접 접근 불가
+- `shared_pending_image_path`는 **App Groups 컨테이너 디렉토리** (`FileManager.default.containerURL(forSecurityApplicationGroupIdentifier:)`)의 임시 파일
+- Main app이 이 경로에서 이미지 로드 → `CardRenderer`에 전달
+- PoC에서는 이미지 공유 최소화 (text/URL 중심)
+
 ---
 
 ## 6. 온보딩 (OnboardingView)
 
+### 6.1 온보딩 화면 흐름
+
+**HTML mockups에 포함되지 않은 화면임 — 앱 첫 실행 시에만 표시**
+
 ```
-OnboardingView
-├── Page 1: "여행 사진을 예쁜 카드로"
-│   └── 일러스트 + "스크린샷 3장의 카드 예시"
-├── Page 2: "공유 시트에서 쉽게"
-│   └── "카카오맵 → 공유 → WanderCard" 스크린샷
-├── Page 3: "사진 접근 권한 설명"
-│   └── "여행 사진만 분석합니다. 원본 수정/업로드 없음."
-│   └── "선택한 사진만 접근합니다" — ✅ 체크
-└── "시작하기" 버튼 → PhotosKit 권한 요청
+OnboardingView (.sheet isPresented)
+├── TabView (PageController 스타일)
+│   ├── Page 1: "여행 사진을 예쁜 카드로"
+│   │   └── 카드 예시 이미지 3장 (라이트/다크/미니멀) — Assets에 프리렌더된 샘플
+│   ├── Page 2: "공유 시트에서 쉽게"
+│   │   └── "카카오맵 → 공유 → WanderCard" 목업 이미지
+│   └── Page 3: "사진 접근이 필요해요" (권한 요청 전)
+│       ├── "여행 날짜/위치 기준으로 사진을 그룹핑합니다"
+│       ├── "원본 사진 수정·업로드하지 않아요"
+│       ├── "선택한 사진만 접근합니다" ✅
+│       └── "모든 데이터는 내 기기에만 저장돼요" ✅
+└── 하단:
+    ├── Page indicator (●○○)
+    └── "시작하기" 버튼 → PhotosKit 권한 요청 (Page 3에서만 활성화)
 ```
 
-**권한 체인:**
+### 6.2 권한 체인
+
 ```
 Onboarding 완료 → PHPhotoLibrary.requestAuthorization(for: .readWrite)
-→ .authorized/.limited → HomeView
-→ .denied → "설정에서 권한을 변경해주세요" + 설정 앱 링크
+→ .authorized/.limited → HomeView (isOnboardingShown = true로标记)
+→ .denied → Onboarding 내 "설정으로 이동" 버튼 → UIApplication.open(URL: App-Prefs)
 ```
+
+**상태 persist:** `AppStorage("isOnboardingShown")` — 첫 실행 후 다시 안 뜸
+**재확인 경로:** 설정 화면에서 "온보딩 다시 보기" 버튼
 
 ---
 
