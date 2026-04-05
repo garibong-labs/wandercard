@@ -1,0 +1,821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		120E20CC296346717CC134BA /* CardRendererTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D072CF1393A24E5824CFC1 /* CardRendererTests.swift */; };
+		1ECDEC18E71C71D4ADB6FA2C /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6B18D5D043A32E03CB8E63 /* Date+Extensions.swift */; };
+		301D6FB4BA1898B240BD892E /* CreateCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B636B5F05212CDB78A48FD /* CreateCardView.swift */; };
+		3079D860140006C629891B7E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45899CD3D114EA6D62BD25C /* OnboardingView.swift */; };
+		3317043D45D9F3A410BA01FC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C82F708C3DEEFB50A5E1DC /* HomeView.swift */; };
+		42FCECAA2EE2F71DC64B6A5B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F931044E89A18D48ADECE2 /* SettingsView.swift */; };
+		447DC86E58F12E2345A0939D /* PhotoLibraryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE691D93334B4F59725A48B /* PhotoLibraryService.swift */; };
+		46114A15355C4B3B173CB5D9 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8611FDC6BF758E3A286CECD5 /* ActivityView.swift */; };
+		5B74E456016D83871461723C /* CardRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7614475A53CAD6FB4A5EDE50 /* CardRenderer.swift */; };
+		6B1B4ABB552372D8E3E67238 /* TravelCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABD96AB5518B204D8304FF3 /* TravelCard.swift */; };
+		6B28FEB13BCEA8B433D3340D /* CGImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E4529E305067A99182A4C8 /* CGImage+Extensions.swift */; };
+		70FF5F310958D66E5E5EC185 /* DarkTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F1771B9C0E9CAB8FF69B71 /* DarkTemplate.swift */; };
+		794EC7D67829C2CEE374E30B /* SharedModelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B832143A5208E8EF21CDF5D /* SharedModelContainer.swift */; };
+		7C700256081D3D2CE4BEC107 /* TripsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23E82C3270E88E39B1FEF1A /* TripsViewModel.swift */; };
+		82955BB17062BE3555818133 /* LightTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A2FD3E14B5E4AB19C057EC /* LightTemplate.swift */; };
+		8ABB84A2129922EE28159F8A /* ShareRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6307456D49A4F54A8E735DD4 /* ShareRootView.swift */; };
+		8E614CEFAA5E55796688D8F4 /* CardTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44783E808A77C8D403F8421 /* CardTemplate.swift */; };
+		98424CE9895DCDCA3EAF7CC1 /* ShareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462AC366412F182B0E8901A2 /* ShareViewModel.swift */; };
+		9AB4137ECAB69F39BEEC7292 /* CardPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642F488AFD11E2B0639F2403 /* CardPreviewView.swift */; };
+		A4DF62E29444FA9880C63F01 /* ImageLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B8831820B4B6244B22778 /* ImageLoaderView.swift */; };
+		A51F5B9567339BF47BD7664E /* TripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0A4647027092AA2705B3A8 /* TripTests.swift */; };
+		A660F57970510E4FBC845CA0 /* WanderCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E22E0DF95AC66127544F63 /* WanderCardApp.swift */; };
+		B1F238F11066D41BF9CA0CFC /* MinimalTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8875215AC9FE228799B42E8 /* MinimalTemplate.swift */; };
+		BB83E0D2A4F6BD36F9AB27FE /* TripDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741BDD9851A822E91AC9C2BF /* TripDetailView.swift */; };
+		C0B4BD2C4CF465BD82E2B02F /* CreateCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A512F20ACDC55C1287AAB3 /* CreateCardViewModel.swift */; };
+		E4E576AAD6B919BE2D3F179A /* SharedPendingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDFA7135B002C8D98355AA7 /* SharedPendingStore.swift */; };
+		E5E0400AA13B480FD762DDF8 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FCAE411F2C8BA6266B1F7A /* Trip.swift */; };
+		E8B5E1D1E2BA2816891E9266 /* ShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F600371A6CE6F7A2A812AF84 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EEAF174A48EBC45E5D11A013 /* SharedPendingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDFA7135B002C8D98355AA7 /* SharedPendingStore.swift */; };
+		F5FE7A17F4749918CEFFB18D /* NSItemProvider+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E44CB8F0FD4FFBC4F63FE9 /* NSItemProvider+Async.swift */; };
+		F616934354A4DE04958D9989 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAB21DF3D40BFD4E79DAFD4 /* ShareViewController.swift */; };
+		F83F1B013D14E9A9CCA6B476 /* TripListCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E6E802D8BC7FE679AD857 /* TripListCard.swift */; };
+		FD7622DAB7E42E8BE114EEC4 /* TemplatePreviewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11E615211A2BD0C5FF1EFBA /* TemplatePreviewCard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B9C97D2358BDD919ADEB70D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E26557E310432F2D5158D138 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C1757F4313E6A86C5BE4E6A;
+			remoteInfo = ShareExtension;
+		};
+		D83213411434BCF64294F4A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E26557E310432F2D5158D138 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A3BE2253C6C57D5DAAF5242;
+			remoteInfo = WanderCard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E19C0DED6267B6B803F10DD8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E8B5E1D1E2BA2816891E9266 /* ShareExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03A2FD3E14B5E4AB19C057EC /* LightTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTemplate.swift; sourceTree = "<group>"; };
+		0BDFA7135B002C8D98355AA7 /* SharedPendingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedPendingStore.swift; sourceTree = "<group>"; };
+		0EE691D93334B4F59725A48B /* PhotoLibraryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryService.swift; sourceTree = "<group>"; };
+		16A512F20ACDC55C1287AAB3 /* CreateCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardViewModel.swift; sourceTree = "<group>"; };
+		20E44CB8F0FD4FFBC4F63FE9 /* NSItemProvider+Async.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSItemProvider+Async.swift"; sourceTree = "<group>"; };
+		23E4529E305067A99182A4C8 /* CGImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+Extensions.swift"; sourceTree = "<group>"; };
+		2812B6C2755C8A969B409E8E /* WanderCard.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = WanderCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B832143A5208E8EF21CDF5D /* SharedModelContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedModelContainer.swift; sourceTree = "<group>"; };
+		35E22E0DF95AC66127544F63 /* WanderCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanderCardApp.swift; sourceTree = "<group>"; };
+		38F1771B9C0E9CAB8FF69B71 /* DarkTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkTemplate.swift; sourceTree = "<group>"; };
+		3D6B18D5D043A32E03CB8E63 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		462AC366412F182B0E8901A2 /* ShareViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewModel.swift; sourceTree = "<group>"; };
+		5503BCAAC621EADE319C591D /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
+		5ABD96AB5518B204D8304FF3 /* TravelCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelCard.swift; sourceTree = "<group>"; };
+		61FCAE411F2C8BA6266B1F7A /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		6307456D49A4F54A8E735DD4 /* ShareRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareRootView.swift; sourceTree = "<group>"; };
+		642F488AFD11E2B0639F2403 /* CardPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPreviewView.swift; sourceTree = "<group>"; };
+		741BDD9851A822E91AC9C2BF /* TripDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailView.swift; sourceTree = "<group>"; };
+		7614475A53CAD6FB4A5EDE50 /* CardRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRenderer.swift; sourceTree = "<group>"; };
+		810E6E802D8BC7FE679AD857 /* TripListCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListCard.swift; sourceTree = "<group>"; };
+		8611FDC6BF758E3A286CECD5 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		8CAB21DF3D40BFD4E79DAFD4 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		8D0A4647027092AA2705B3A8 /* TripTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTests.swift; sourceTree = "<group>"; };
+		94B636B5F05212CDB78A48FD /* CreateCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardView.swift; sourceTree = "<group>"; };
+		A2F931044E89A18D48ADECE2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B23E82C3270E88E39B1FEF1A /* TripsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewModel.swift; sourceTree = "<group>"; };
+		B6A11E7C7D77A027C1D9CA02 /* WanderCardTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = WanderCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8875215AC9FE228799B42E8 /* MinimalTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalTemplate.swift; sourceTree = "<group>"; };
+		C49CBD287B5A088BAE3BF4DB /* WanderCard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WanderCard.entitlements; sourceTree = "<group>"; };
+		D11E615211A2BD0C5FF1EFBA /* TemplatePreviewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatePreviewCard.swift; sourceTree = "<group>"; };
+		D16B8831820B4B6244B22778 /* ImageLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderView.swift; sourceTree = "<group>"; };
+		D45899CD3D114EA6D62BD25C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		E1C82F708C3DEEFB50A5E1DC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E44783E808A77C8D403F8421 /* CardTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTemplate.swift; sourceTree = "<group>"; };
+		F4D072CF1393A24E5824CFC1 /* CardRendererTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRendererTests.swift; sourceTree = "<group>"; };
+		F600371A6CE6F7A2A812AF84 /* ShareExtension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0F7E512326D8FE65FDF32655 /* CardPreview */ = {
+			isa = PBXGroup;
+			children = (
+				642F488AFD11E2B0639F2403 /* CardPreviewView.swift */,
+			);
+			path = CardPreview;
+			sourceTree = "<group>";
+		};
+		0FFEE0A7D3C92958BD8FD0B6 /* CreateCard */ = {
+			isa = PBXGroup;
+			children = (
+				94B636B5F05212CDB78A48FD /* CreateCardView.swift */,
+			);
+			path = CreateCard;
+			sourceTree = "<group>";
+		};
+		1E78169D2CE0DA455361F61F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8611FDC6BF758E3A286CECD5 /* ActivityView.swift */,
+				D16B8831820B4B6244B22778 /* ImageLoaderView.swift */,
+				D11E615211A2BD0C5FF1EFBA /* TemplatePreviewCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1F8EB3E690234909B6908FAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F600371A6CE6F7A2A812AF84 /* ShareExtension.appex */,
+				2812B6C2755C8A969B409E8E /* WanderCard.app */,
+				B6A11E7C7D77A027C1D9CA02 /* WanderCardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CB2E293A58ADFAA5BB828AA /* WanderCard */ = {
+			isa = PBXGroup;
+			children = (
+				C49CBD287B5A088BAE3BF4DB /* WanderCard.entitlements */,
+				B5AF41D03CADAC0A68BCB2D1 /* App */,
+				30B1952865058CCB57BAD45A /* Core */,
+				4C6D7B3F9DA7DCC82C5B932D /* Features */,
+				5988525CE50C9635F3DE9DF7 /* Preview Content */,
+				E26A2AC0A1CC37138CFC78B2 /* Resources */,
+				B8137F5FCF4E45FB256E89DC /* Shared */,
+				54C80468EDB6A897248CED08 /* Templates */,
+			);
+			path = WanderCard;
+			sourceTree = "<group>";
+		};
+		30B1952865058CCB57BAD45A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E410AF58F992C30A504864A2 /* Models */,
+				57C761902585E4A008AC68A8 /* Services */,
+				EA59B52C531A8E4263B1B77D /* ViewModels */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4C6D7B3F9DA7DCC82C5B932D /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				0F7E512326D8FE65FDF32655 /* CardPreview */,
+				0FFEE0A7D3C92958BD8FD0B6 /* CreateCard */,
+				C2F7D43AC761576E94561EB3 /* Home */,
+				C5D03B68F65B8993D7A97238 /* Onboarding */,
+				6D1ECC66BF1166A510E8CBDB /* TripDetail */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		54C80468EDB6A897248CED08 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				E44783E808A77C8D403F8421 /* CardTemplate.swift */,
+				38F1771B9C0E9CAB8FF69B71 /* DarkTemplate.swift */,
+				03A2FD3E14B5E4AB19C057EC /* LightTemplate.swift */,
+				B8875215AC9FE228799B42E8 /* MinimalTemplate.swift */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		57C761902585E4A008AC68A8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7614475A53CAD6FB4A5EDE50 /* CardRenderer.swift */,
+				0EE691D93334B4F59725A48B /* PhotoLibraryService.swift */,
+				0BDFA7135B002C8D98355AA7 /* SharedPendingStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5988525CE50C9635F3DE9DF7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6D1ECC66BF1166A510E8CBDB /* TripDetail */ = {
+			isa = PBXGroup;
+			children = (
+				741BDD9851A822E91AC9C2BF /* TripDetailView.swift */,
+			);
+			path = TripDetail;
+			sourceTree = "<group>";
+		};
+		74B4826EE234D36E87B68B96 /* WanderCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4D072CF1393A24E5824CFC1 /* CardRendererTests.swift */,
+				8D0A4647027092AA2705B3A8 /* TripTests.swift */,
+			);
+			path = WanderCardTests;
+			sourceTree = "<group>";
+		};
+		82A0A886A06965A4F88BD2F5 = {
+			isa = PBXGroup;
+			children = (
+				82F781F05751E25C38F19F58 /* ShareExtension */,
+				2CB2E293A58ADFAA5BB828AA /* WanderCard */,
+				74B4826EE234D36E87B68B96 /* WanderCardTests */,
+				1F8EB3E690234909B6908FAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82F781F05751E25C38F19F58 /* ShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				20E44CB8F0FD4FFBC4F63FE9 /* NSItemProvider+Async.swift */,
+				5503BCAAC621EADE319C591D /* ShareExtension.entitlements */,
+				6307456D49A4F54A8E735DD4 /* ShareRootView.swift */,
+				8CAB21DF3D40BFD4E79DAFD4 /* ShareViewController.swift */,
+				462AC366412F182B0E8901A2 /* ShareViewModel.swift */,
+			);
+			path = ShareExtension;
+			sourceTree = "<group>";
+		};
+		9A1FEA0BF0812C62843D7A21 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				23E4529E305067A99182A4C8 /* CGImage+Extensions.swift */,
+				3D6B18D5D043A32E03CB8E63 /* Date+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B5AF41D03CADAC0A68BCB2D1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2B832143A5208E8EF21CDF5D /* SharedModelContainer.swift */,
+				35E22E0DF95AC66127544F63 /* WanderCardApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B8137F5FCF4E45FB256E89DC /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				1E78169D2CE0DA455361F61F /* Components */,
+				9A1FEA0BF0812C62843D7A21 /* Extensions */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		C2F7D43AC761576E94561EB3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E1C82F708C3DEEFB50A5E1DC /* HomeView.swift */,
+				810E6E802D8BC7FE679AD857 /* TripListCard.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C5D03B68F65B8993D7A97238 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				D45899CD3D114EA6D62BD25C /* OnboardingView.swift */,
+				A2F931044E89A18D48ADECE2 /* SettingsView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		E26A2AC0A1CC37138CFC78B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E410AF58F992C30A504864A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5ABD96AB5518B204D8304FF3 /* TravelCard.swift */,
+				61FCAE411F2C8BA6266B1F7A /* Trip.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA59B52C531A8E4263B1B77D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				16A512F20ACDC55C1287AAB3 /* CreateCardViewModel.swift */,
+				B23E82C3270E88E39B1FEF1A /* TripsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AA328D164CBBFE1AC6DDB5E /* WanderCardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B320D0AE735ACA8C40D2522 /* Build configuration list for PBXNativeTarget "WanderCardTests" */;
+			buildPhases = (
+				3E354803A926DFD1DC446692 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07039DCF7044E92370BB5EC3 /* PBXTargetDependency */,
+			);
+			name = WanderCardTests;
+			packageProductDependencies = (
+			);
+			productName = WanderCardTests;
+			productReference = B6A11E7C7D77A027C1D9CA02 /* WanderCardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5A3BE2253C6C57D5DAAF5242 /* WanderCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC504CB01A1B87F9443BC43 /* Build configuration list for PBXNativeTarget "WanderCard" */;
+			buildPhases = (
+				026AE6E4B265CB3303E08CD9 /* Sources */,
+				E19C0DED6267B6B803F10DD8 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BA9BE4AE123FCB1AF91E715 /* PBXTargetDependency */,
+			);
+			name = WanderCard;
+			packageProductDependencies = (
+			);
+			productName = WanderCard;
+			productReference = 2812B6C2755C8A969B409E8E /* WanderCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7C1757F4313E6A86C5BE4E6A /* ShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2DE51BEED1E8BD5BC9F535F /* Build configuration list for PBXNativeTarget "ShareExtension" */;
+			buildPhases = (
+				79FDF24AF131653BD2968B58 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareExtension;
+			packageProductDependencies = (
+			);
+			productName = ShareExtension;
+			productReference = F600371A6CE6F7A2A812AF84 /* ShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E26557E310432F2D5158D138 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					5A3BE2253C6C57D5DAAF5242 = {
+						DevelopmentTeam = "";
+					};
+					7C1757F4313E6A86C5BE4E6A = {
+						DevelopmentTeam = "";
+					};
+				};
+			};
+			buildConfigurationList = 59CB30D7B3170CFBDC6F700F /* Build configuration list for PBXProject "WanderCard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 82A0A886A06965A4F88BD2F5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C1757F4313E6A86C5BE4E6A /* ShareExtension */,
+				5A3BE2253C6C57D5DAAF5242 /* WanderCard */,
+				3AA328D164CBBFE1AC6DDB5E /* WanderCardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		026AE6E4B265CB3303E08CD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46114A15355C4B3B173CB5D9 /* ActivityView.swift in Sources */,
+				6B28FEB13BCEA8B433D3340D /* CGImage+Extensions.swift in Sources */,
+				9AB4137ECAB69F39BEEC7292 /* CardPreviewView.swift in Sources */,
+				5B74E456016D83871461723C /* CardRenderer.swift in Sources */,
+				8E614CEFAA5E55796688D8F4 /* CardTemplate.swift in Sources */,
+				301D6FB4BA1898B240BD892E /* CreateCardView.swift in Sources */,
+				C0B4BD2C4CF465BD82E2B02F /* CreateCardViewModel.swift in Sources */,
+				70FF5F310958D66E5E5EC185 /* DarkTemplate.swift in Sources */,
+				1ECDEC18E71C71D4ADB6FA2C /* Date+Extensions.swift in Sources */,
+				3317043D45D9F3A410BA01FC /* HomeView.swift in Sources */,
+				A4DF62E29444FA9880C63F01 /* ImageLoaderView.swift in Sources */,
+				82955BB17062BE3555818133 /* LightTemplate.swift in Sources */,
+				B1F238F11066D41BF9CA0CFC /* MinimalTemplate.swift in Sources */,
+				3079D860140006C629891B7E /* OnboardingView.swift in Sources */,
+				447DC86E58F12E2345A0939D /* PhotoLibraryService.swift in Sources */,
+				42FCECAA2EE2F71DC64B6A5B /* SettingsView.swift in Sources */,
+				794EC7D67829C2CEE374E30B /* SharedModelContainer.swift in Sources */,
+				E4E576AAD6B919BE2D3F179A /* SharedPendingStore.swift in Sources */,
+				FD7622DAB7E42E8BE114EEC4 /* TemplatePreviewCard.swift in Sources */,
+				6B1B4ABB552372D8E3E67238 /* TravelCard.swift in Sources */,
+				E5E0400AA13B480FD762DDF8 /* Trip.swift in Sources */,
+				BB83E0D2A4F6BD36F9AB27FE /* TripDetailView.swift in Sources */,
+				F83F1B013D14E9A9CCA6B476 /* TripListCard.swift in Sources */,
+				7C700256081D3D2CE4BEC107 /* TripsViewModel.swift in Sources */,
+				A660F57970510E4FBC845CA0 /* WanderCardApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E354803A926DFD1DC446692 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				120E20CC296346717CC134BA /* CardRendererTests.swift in Sources */,
+				A51F5B9567339BF47BD7664E /* TripTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79FDF24AF131653BD2968B58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FE7A17F4749918CEFFB18D /* NSItemProvider+Async.swift in Sources */,
+				8ABB84A2129922EE28159F8A /* ShareRootView.swift in Sources */,
+				F616934354A4DE04958D9989 /* ShareViewController.swift in Sources */,
+				98424CE9895DCDCA3EAF7CC1 /* ShareViewModel.swift in Sources */,
+				EEAF174A48EBC45E5D11A013 /* SharedPendingStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07039DCF7044E92370BB5EC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A3BE2253C6C57D5DAAF5242 /* WanderCard */;
+			targetProxy = D83213411434BCF64294F4A9 /* PBXContainerItemProxy */;
+		};
+		4BA9BE4AE123FCB1AF91E715 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C1757F4313E6A86C5BE4E6A /* ShareExtension */;
+			targetProxy = 5B9C97D2358BDD919ADEB70D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A3770C5B558661643068E1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		28B9869B45238722D2AED268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = WanderCard/WanderCard.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_CFBundleDisplayName = WanderCard;
+				INFOPLIST_KEY_CFBundleURLTypes = (
+					{
+						CFBundleURLName = dev.garibong.wandercard;
+						CFBundleURLSchemes = (
+							wandercard,
+						);
+					},
+				);
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "생성된 카드를 사진 라이브러리에 저장합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "여행 사진을 카드 이미지로 생성하기 위해 사진 라이브러리에 접근합니다.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = (
+					UIInterfaceOrientationPortrait,
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.garibong.wandercard;
+				PRODUCT_NAME = WanderCard;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3CC267B549F0F669276B88B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		713F0D7DAB3E5E56C753A114 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.garibong.wandercard.share;
+				PRODUCT_NAME = WanderCardShare;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FAF177F9AA35910FD9A7703 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.garibong.wandercard.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WanderCard.app/WanderCard";
+			};
+			name = Release;
+		};
+		CB7C75F0F04429556FE80F2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.garibong.wandercard.share;
+				PRODUCT_NAME = WanderCardShare;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D1AD38FE261311C03F22A432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.garibong.wandercard.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WanderCard.app/WanderCard";
+			};
+			name = Debug;
+		};
+		D1EE840C9708FAECC90D970B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = WanderCard/WanderCard.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_CFBundleDisplayName = WanderCard;
+				INFOPLIST_KEY_CFBundleURLTypes = (
+					{
+						CFBundleURLName = dev.garibong.wandercard;
+						CFBundleURLSchemes = (
+							wandercard,
+						);
+					},
+				);
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "생성된 카드를 사진 라이브러리에 저장합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "여행 사진을 카드 이미지로 생성하기 위해 사진 라이브러리에 접근합니다.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = (
+					UIInterfaceOrientationPortrait,
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.garibong.wandercard;
+				PRODUCT_NAME = WanderCard;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B320D0AE735ACA8C40D2522 /* Build configuration list for PBXNativeTarget "WanderCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1AD38FE261311C03F22A432 /* Debug */,
+				9FAF177F9AA35910FD9A7703 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		59CB30D7B3170CFBDC6F700F /* Build configuration list for PBXProject "WanderCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A3770C5B558661643068E1F /* Debug */,
+				3CC267B549F0F669276B88B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B2DE51BEED1E8BD5BC9F535F /* Build configuration list for PBXNativeTarget "ShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				713F0D7DAB3E5E56C753A114 /* Debug */,
+				CB7C75F0F04429556FE80F2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DAC504CB01A1B87F9443BC43 /* Build configuration list for PBXNativeTarget "WanderCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1EE840C9708FAECC90D970B /* Debug */,
+				28B9869B45238722D2AED268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E26557E310432F2D5158D138 /* Project object */;
+}
