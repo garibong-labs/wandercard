@@ -32,7 +32,11 @@ Danny가 `sessions_spawn`으로 ACP 세션 열 때, **webhook/relay 설정에서
 
 ### 계정 사용 원칙
 - **저장소 생성**: 반드시 `garibong-labs` 계정으로
-- **PR 생성**: 반드시 작업한 에이전트 본인 계정으로 (`agent-eli`, `agent-dani`)
+- ### PR 생성: 반드시 작업한 에이전트 본인 계정으로 (`agent-eli`, `agent-dani`)
+
+### 브랜치 전략
+- **main only** — feature 브랜치 → main으로 바로 PR
+- PR base: 항상 `main` (develop 브랜치 없음)
 - **gh auth는 글로벌 상태** — 전후로 `gh auth status` 확인 필수
 
 ### 래퍼 스크립트
