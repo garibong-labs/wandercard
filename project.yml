@@ -15,8 +15,6 @@ targets:
     platform: iOS
     sources:
       - path: WanderCard
-        excludes:
-          - Resources/Info.plist
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: dev.garibong.wandercard
@@ -27,19 +25,7 @@ targets:
         CODE_SIGN_IDENTITY: ""
         CODE_SIGNING_REQUIRED: NO
         CODE_SIGNING_ALLOWED: NO
-        INFOPLIST_FILE: ""
-        GENERATE_INFOPLIST_FILE: YES
-        INFOPLIST_KEY_CFBundleDisplayName: WanderCard
-        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: 여행 사진을 카드 이미지로 생성하기 위해 사진 라이브러리에 접근합니다.
-        INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription: 생성된 카드를 사진 라이브러리에 저장합니다.
-        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
-        INFOPLIST_KEY_UILaunchScreen_Generation: YES
-        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone:
-          - UIInterfaceOrientationPortrait
-        INFOPLIST_KEY_CFBundleURLTypes:
-          - CFBundleURLName: dev.garibong.wandercard
-            CFBundleURLSchemes:
-              - wandercard
+        INFOPLIST_FILE: WanderCard/Resources/Info.plist
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
       configs:
         Debug:

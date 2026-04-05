@@ -6,6 +6,7 @@ struct WanderCardApp: App {
     @AppStorage("isOnboardingShown") private var isOnboardingShown = false
     @State private var appState = AppState()
     private let sharedStore = SharedPendingStore()
+    private let processInfo = ProcessInfo.processInfo
 
     var body: some Scene {
         WindowGroup {
@@ -13,6 +14,14 @@ struct WanderCardApp: App {
                 .environment(appState)
                 .environment(sharedStore)
                 .modelContainer(SharedModelContainer.container)
+                .task {
+                    if processInfo.arguments.contains("-skipOnboarding") {
+                        isOnboardingShown = true
+                    }
+                    if processInfo.arguments.contains("-openCreateCard") {
+                        appState.presentCreateCard()
+                    }
+                }
                 .onOpenURL { url in
                     appState.handleIncoming(url: url, store: sharedStore)
                 }

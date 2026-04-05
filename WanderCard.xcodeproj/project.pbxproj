@@ -84,6 +84,7 @@
 		2B832143A5208E8EF21CDF5D /* SharedModelContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedModelContainer.swift; sourceTree = "<group>"; };
 		35E22E0DF95AC66127544F63 /* WanderCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanderCardApp.swift; sourceTree = "<group>"; };
 		38F1771B9C0E9CAB8FF69B71 /* DarkTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkTemplate.swift; sourceTree = "<group>"; };
+		38FD7B3355CC33B771A291F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3D6B18D5D043A32E03CB8E63 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		462AC366412F182B0E8901A2 /* ShareViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewModel.swift; sourceTree = "<group>"; };
 		5503BCAAC621EADE319C591D /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
@@ -301,6 +302,7 @@
 		E26A2AC0A1CC37138CFC78B2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				38FD7B3355CC33B771A291F2 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -561,24 +563,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "";
-				INFOPLIST_KEY_CFBundleDisplayName = WanderCard;
-				INFOPLIST_KEY_CFBundleURLTypes = (
-					{
-						CFBundleURLName = dev.garibong.wandercard;
-						CFBundleURLSchemes = (
-							wandercard,
-						);
-					},
-				);
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "생성된 카드를 사진 라이브러리에 저장합니다.";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "여행 사진을 카드 이미지로 생성하기 위해 사진 라이브러리에 접근합니다.";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = (
-					UIInterfaceOrientationPortrait,
-				);
+				INFOPLIST_FILE = WanderCard/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -745,24 +730,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "";
-				INFOPLIST_KEY_CFBundleDisplayName = WanderCard;
-				INFOPLIST_KEY_CFBundleURLTypes = (
-					{
-						CFBundleURLName = dev.garibong.wandercard;
-						CFBundleURLSchemes = (
-							wandercard,
-						);
-					},
-				);
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "생성된 카드를 사진 라이브러리에 저장합니다.";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "여행 사진을 카드 이미지로 생성하기 위해 사진 라이브러리에 접근합니다.";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = (
-					UIInterfaceOrientationPortrait,
-				);
+				INFOPLIST_FILE = WanderCard/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
