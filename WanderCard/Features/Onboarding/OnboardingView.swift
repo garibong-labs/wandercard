@@ -28,7 +28,19 @@ struct OnboardingView: View {
                 permissionsPage
                     .tag(2)
             }
-            .tabViewStyle(.page(indexDisplayMode: .always))
+            .tabViewStyle(.page(indexDisplayMode: .never))
+
+            HStack(spacing: 8) {
+                ForEach(0..<3, id: \.self) { index in
+                    Circle()
+                        .fill(index == page ? Color.primary : Color.secondary.opacity(0.25))
+                        .frame(width: 8, height: 8)
+                        .animation(.easeInOut(duration: 0.2), value: page)
+                        .accessibilityHidden(true)
+                }
+            }
+            .accessibilityElement(children: .ignore)
+            .accessibilityLabel("온보딩 페이지 \(page + 1) / 3")
 
             Button(page == 2 ? "시작하기" : "다음") {
                 Task { await advance() }

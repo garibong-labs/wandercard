@@ -39,11 +39,6 @@ struct HomeView: View {
                         Image(systemName: "plus.circle.fill")
                     }
                 }
-                ToolbarItem(placement: .topBarLeading) {
-                    Button("설정") {
-                        appState.presentSettings()
-                    }
-                }
             }
             .safeAreaInset(edge: .bottom) {
                 TabBarStub(activeTab: .trips) {
