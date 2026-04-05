@@ -2,6 +2,7 @@ import Foundation
 import SwiftData
 import os.log
 
+@MainActor
 enum SharedModelContainer {
     static let appGroupIdentifier = "group.dev.garibong.wandercard"
 
